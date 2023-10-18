@@ -1,0 +1,11 @@
+package VariablesandMethodsandExceptions;
+
+public class AccessModifiers2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		AccessModifiers2 abc = new AccessModifiers2();
+	}
+
+}

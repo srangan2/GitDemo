@@ -1,0 +1,32 @@
+package coreJavaTraining;
+
+public class stringclassdemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//  String - it is one of the prebuilt class in Java 
+		
+		String a =" JavaTraining"; // String Literal
+		//String b ="Hello"; // String Literal
+		//String a = new String("Hello"); // With String class
+		//String b = new String("Hello"); // With String class
+		
+		System.out.println(a.charAt((2)));
+		System.out.println(a.indexOf(("e")));
+		System.out.println(a.substring(2, 5));	
+		System.out.println(a.substring(5));
+		System.out.println(a.concat("rahul teached"));
+		System.out.println(a.length());
+		System.out.println(a.trim());
+		System.out.println(a.toLowerCase());
+		System.out.println(a.toUpperCase());
+		String arr[]=a.split("T");
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
+		System.out.println(a.replace("J", "A")));)
+		
+				
+	}
+
+}

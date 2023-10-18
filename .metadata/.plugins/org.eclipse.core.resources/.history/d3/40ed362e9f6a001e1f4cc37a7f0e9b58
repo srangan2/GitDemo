@@ -1,0 +1,17 @@
+package Interfaceandoops1;
+
+import Interfaceandoops.parentdemoSuper;
+
+public class ChilddemoSuper extends parentdemoSuper {
+	
+	String name = "Anuradha";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ChilddemoSuper cd = new ChilddemoSuper();
+		System.out.println(name);
+		
+	}
+
+}

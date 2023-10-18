@@ -1,0 +1,13 @@
+package JavaCollections;
+
+public class hashset {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Hash Set, treeset, LinkedHashset implements Set interface
+		//doesnt accept duplicate value
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package coreJavaTraining;
+
+public class interview {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int abc[][]= {{1,2,3},{3,4,7},{1,2,9}};
+	}
+
+}

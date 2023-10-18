@@ -1,0 +1,16 @@
+package JavaCollections;
+
+public class hashset {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Hash Set, tree set, LinkedHashset implements Set interface
+		//doesn't accept duplicate value
+		// There is no guranteee elements stored in sequental order
+		
+		HashSet hs = new HashSet();
+
+	}
+
+}

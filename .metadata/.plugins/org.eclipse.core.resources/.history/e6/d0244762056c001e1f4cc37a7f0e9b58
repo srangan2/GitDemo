@@ -1,0 +1,28 @@
+package Selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SellIntroduction {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		
+	/*	System.setProperty("webdriver.chrome.driver", "C:\\Users\\hssri\\eclipse-workspace\\coreJavaTraining\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		*/
+		//FireFox Launch
+		
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\hssri\\eclipse-workspace\\coreJavaTraining\\Drivers\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+				
+		driver.get("https://www.rahulshettyacademy.com");
+		System.out.println(driver.getCurrentUrl());
+;		System.out.println(driver.getTitle());
+		
+		driver.quit();
+	}
+
+}

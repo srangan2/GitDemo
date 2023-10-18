@@ -1,0 +1,38 @@
+package Interfaceandoops;
+
+import Interfaceandoops.CentralTraffic;
+public class AustralianTraffic implements CentralTraffic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		CentralTraffic a= new CentralTraffic();
+		a.redstop();
+	}
+
+	@Override
+	public void greengo() {
+		// TODO Auto-generated method stub
+		{
+			System.out.println("go green implementation");
+		}
+		
+	}
+
+	@Override
+	public void redstop() {
+		// TODO Auto-generated method stub
+		{
+			System.out.println("redstop implementation");
+		}
+	}
+
+	@Override
+	public void flashingyellow() {
+		// TODO Auto-generated method stub
+		{
+			System.out.println("flashingyellow implementation");
+		}
+	}
+
+}

@@ -1,0 +1,13 @@
+package JavaCollections;
+
+public class ArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Integer :  The Integer class wraps a value of the primitive type int in an object. 
+		//An object of type Integercontains a single field whose type is int.
+		ArrayList<Integer> a = new ArrayList<Integer>();
+
+	}
+
+}

@@ -1,0 +1,37 @@
+package Selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SellIntroduction {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hssri\\eclipse-workspace\\coreJavaTraining\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		//FireFox Launch
+		
+	/*	System.setProperty("webdriver.gecko.driver", "C:\\Users\\hssri\\eclipse-workspace\\coreJavaTraining\\Drivers\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+				
+		*/		
+		//edge Launch
+	/*	System.setProperty("webdriver.edge.driver", "C:\\Users\\hssri\\eclipse-workspace\\coreJavaTraining\\Drivers\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+		*/
+		driver.get("https://www.rahulshettyacademy.com");
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getTitle());
+		driver.findElement(By.className("login-btn\"")).click();"
+		driver.findElement(By.id("email")).sendKeys("Baulo");
+
+		//driver.quit();
+	}
+
+}

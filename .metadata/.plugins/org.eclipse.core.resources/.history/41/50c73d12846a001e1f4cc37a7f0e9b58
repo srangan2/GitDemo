@@ -1,0 +1,21 @@
+package Interfaceandoops;
+
+public class constructdemo {
+	
+	public constructdemo()
+	{
+		System.out.println("I am in the constructor");
+	}
+
+	public void getdata()
+	{
+		System.out.println("I am in the method");
+
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

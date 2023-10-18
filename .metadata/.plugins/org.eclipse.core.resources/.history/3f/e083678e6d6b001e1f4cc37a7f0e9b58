@@ -1,0 +1,32 @@
+package VariablesandMethods;
+
+public class StaticVar {
+	
+	String name;
+	String address;
+	static String city="Bangalore";
+	static int i=0;
+
+	StaticVar(String name, String address)
+	{
+		this.name=name;
+		this.address=address;
+		
+	}
+	
+	public void getAddress()
+	{
+		System.out.println(address+" "+city);
+		i++
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		StaticVar obj = new StaticVar("Bob","CanarabankLayout");
+		StaticVar obj1 = new StaticVar("Jack","Malleswaram");
+		obj.getAddress();
+		obj1.getAddress();
+	}
+
+}

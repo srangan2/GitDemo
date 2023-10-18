@@ -1,0 +1,16 @@
+package Interfaceandoops;
+
+import java.text.SimpleDateFormat;
+
+public class Calendar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SimpleDateFormat sd= new SimpleDateFormat();
+		Calendar cal = new Calendar();
+		
+		cal
+	}
+
+}

@@ -1,0 +1,20 @@
+package JavaCollections;
+
+public class ArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Integer :  The Integer class wraps a value of the primitive type int in an object. 
+		//An object of type Integercontains a single field whose type is int.
+		//Arrays have fixed size and array list can be added dynamically
+		
+		
+		java.util.ArrayList<String> a = new java.util.ArrayList<String>();
+		a.add("rahul");
+		a.add("Java");
+		System.out.println(a);
+		a.add(0, "Students");
+		System.out.println(a);
+	}
+
+}

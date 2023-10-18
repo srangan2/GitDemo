@@ -1,0 +1,29 @@
+package Interfaceandoops;
+
+public class functionoverloadingPolymorphism {
+
+	public void getdata(int a)
+	{
+		System.out.println(a); 
+	}
+	
+	public void getdata(int a, int b)
+	{
+		System.out.println(a+b); 
+	}
+	
+	public void getdata(String a)
+	{
+		System.out.println(a);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		functionoverloadingPolymorphism c1 =  new functionoverloadingPolymorphism();
+		c1.getdata(2, 5);
+		c1.getdata(5);
+		
+	}
+
+}

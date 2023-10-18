@@ -1,0 +1,20 @@
+package VariablesandMethodsandExceptions;
+
+public class javaexception {
+
+	int a =4;
+	//3 lines of code - not sure if they thrwo error
+	
+	int b=7;
+	int c=0;
+	
+	int k=b/c;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+	}
+
+}

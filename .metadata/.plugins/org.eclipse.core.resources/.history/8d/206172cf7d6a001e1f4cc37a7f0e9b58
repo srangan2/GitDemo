@@ -1,0 +1,11 @@
+package Interfaceandoops;
+
+public class Calendardemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	Calendar.getInstance();
+	}
+
+}

@@ -1,0 +1,14 @@
+package Interfaceandoops;
+
+public class Calendar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		simpledateformat sd= new simpledateformat();
+		Calendar cal = new Calendar();
+		
+		cal
+	}
+
+}

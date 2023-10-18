@@ -1,0 +1,67 @@
+package Selenium;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SeleniumLocators {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hssri\\eclipse-workspace\\coreJavaTraining\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		//FireFox Launch
+		
+	/*	System.setProperty("webdriver.gecko.driver", "C:\\Users\\hssri\\eclipse-workspace\\coreJavaTraining\\Drivers\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+				
+		*/		
+		//edge Launch
+	/*	System.setProperty("webdriver.edge.driver", "C:\\Users\\hssri\\eclipse-workspace\\coreJavaTraining\\Drivers\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+		*/
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getTitle());
+		//driver.findElement(By.className("login-btn\"")).click();
+		driver.findElement(By.id("inputUsername")).sendKeys("Baulo");
+		driver.findElement(By.name("inputPassword")).sendKeys("Bollam");
+		driver.findElement(By.className("signInBtn")).click();
+	//	Thread.sleep(3000);
+		
+		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
+		driver.findElement(By.linkText("Forgot your password?")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[@placeholder=\"Name\"]")).sendKeys("Toachkala");
+		driver.findElement(By.cssSelector("input[placeholder=\"Email\"]")).sendKeys("Baulo@gmail.com");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[@type=\"text\"][2]")).clear();
+		Thread.sleep(3000);
+		driver.findElement(By.cssSelector("input[type=\"text\"]:nth-child(3)")).sendKeys("BollamBaulo@gmail.com");
+		driver.findElement(By.xpath("//form/input[3]")).sendKeys("9886189639");
+		Thread.sleep(3000);
+		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+		System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+		driver.findElement(By.xpath("//button[@class=\"go-to-login-btn\"]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.cssSelector("input#inputUsername")).sendKeys("Baulooo");
+		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+		
+		driver.findElement(By.xpath("//input[@id=\"chkboxOne\"]")).click();
+		driver.findElement(By.cssSelector("input[id=\"chkboxTwo\"]")).click();
+		driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
+		
+		
+		Thread.sleep(3000);
+		driver.quit();
+	}
+
+}

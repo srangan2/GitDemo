@@ -1,0 +1,10 @@
+package Interfaceandoops1;
+
+public class ChilddemoSuper {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

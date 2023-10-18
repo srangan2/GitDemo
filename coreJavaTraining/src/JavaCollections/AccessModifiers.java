@@ -1,0 +1,34 @@
+package JavaCollections;
+
+public class AccessModifiers {
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		AccessModifiers ab = new AccessModifiers();
+		ab.ghi();
+	}
+//Default : access method anywhere in same package
+	void abc()
+	{
+		System.out.println("This is default package");
+	}
+
+	//Public  : access method anywhere within the project and in any package
+	public void def()
+	{
+		System.out.println("This is default package");
+	}
+// Private : you can only access within the same class , outside the class you cannot access from differrent class
+	
+	private void ghi()
+	{
+		System.out.println("This is default package");
+	}
+	// Protected : you can only access in child class where there is an extends to parent class by creating object from the parent class
+	protected void jkl()
+	{
+		System.out.println("This is default package");
+	}
+}

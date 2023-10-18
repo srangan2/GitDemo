@@ -1,0 +1,22 @@
+package JavaCollections;
+
+public class AccessModifiers {
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+//Default : access method anywhere in package
+	void abc()
+	{
+		System.out.println("This is default package");
+	}
+
+	
+	public void def()
+	{
+		System.out.println("This is default package");
+	}
+
+}

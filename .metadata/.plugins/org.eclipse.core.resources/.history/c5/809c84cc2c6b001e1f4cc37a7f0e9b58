@@ -1,0 +1,22 @@
+package Interfaceandoops1;
+
+public class thisDemo {
+	
+	int a =2;
+	
+	public void getdata()
+
+	{
+		int a =3;
+		System.out.println(a);
+		System.out.println(this.a);
+		System.out.println(a+this.a);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		thisDemo cd =  new thisDemo();
+		cd.getdata();
+	}
+
+}

@@ -1,0 +1,13 @@
+package Selenium;
+
+public class SellIntroduction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Chrome driver
+		System.setProperties("webdriver.chrome.driver", "C:\Personal\Driverfiles");"
+		Webdriver driver = new ChromeDriver();
+	}
+
+}

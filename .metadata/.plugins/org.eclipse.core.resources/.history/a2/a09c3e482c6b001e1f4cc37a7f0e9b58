@@ -1,0 +1,14 @@
+package Interfaceandoops1;
+
+public class thisDemo {
+	
+	int a =2;
+	
+	public void getdata()
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

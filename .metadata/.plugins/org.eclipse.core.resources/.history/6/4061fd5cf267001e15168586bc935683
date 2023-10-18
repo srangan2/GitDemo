@@ -1,0 +1,21 @@
+package coreJavaTraining;
+
+public class stringclassdemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//  String - it is one of the prebuilt class in Java 
+		
+		String a ="Hello"; // String Literal
+		//String b ="Hello"; // String Literal
+		//String a = new String("Hello"); // With String class
+		//String b = new String("Hello"); // With String class
+		
+		System.out.println(a.charAt((2)));
+		System.out.println(a.indent(("e")));
+				
+		
+	}
+
+}
