@@ -2,6 +2,8 @@ package stepDefinitions;
 
 import java.util.List;
 
+import org.junit.Assert;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -26,6 +28,7 @@ public class MainSteps {
 	public void user_is_on_practice_landing_page()
 	{
 		System.out.println("User is on Practice landed on Landing page");
+		Assert.assertTrue(false);
 	}
 	
 	

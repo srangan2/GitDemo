@@ -10,7 +10,7 @@ And hit the home page url of banking site
  
 
  #Resuable
- @MobileTest @NetBanking
+ @RegressionTest @NetBanking
   Scenario: User page default Login
     Given User is on NetBanking landing page
     When User login into application with Username 12345 and password 0953
