@@ -41,7 +41,7 @@ public LandingproductpageName(TestContextSetup testContextSetup)
 		testContextSetup.driver.findElement(By.xpath("//input[@type=\"search\"]")).sendKeys(shortName);
 	Thread.sleep(5000);
 	testContextSetup.LandingproductpageName = testContextSetup.driver.findElement(By.cssSelector("h4.product-name")).getText().split("-")[0].trim();
-	System.out.println(LandingproductpageName +" is extracted from Home page");
+	System.out.println(LandingproductpageName+"is extracted from Home page");
 	
 		
 	}
