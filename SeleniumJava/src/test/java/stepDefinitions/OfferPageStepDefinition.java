@@ -13,6 +13,7 @@ import org.testng.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pageObjects.OffersPage;
 import utils.TestContextSetup;
 //Single responsibility class
 //loosly coupled class
@@ -38,7 +39,8 @@ public OfferPageStepDefinition(TestContextSetup testContextSetup)
 	}   
 	
 	public void switchtoOfferpage() {
-		if(testContextSetup.driver.getCurrentUrl().equalsIgnoreCase("https://rahulshettyacademy.com/seleniumPractise/#/offers"));
+		OffersPage offerpage = new OffersPage();
+		
 		testContextSetup.driver.findElement(By.xpath("//a[@href=\"#/offers\"]")).click();
 	    Set<String> s1 =testContextSetup.driver.getWindowHandles();
 	    Iterator<String> i1 =s1.iterator();

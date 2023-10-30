@@ -24,6 +24,7 @@ TestContextSetup testContextSetup;
 public LandingproductpageName(TestContextSetup testContextSetup)
 {
 	this.testContextSetup=testContextSetup;
+	this.LandingproductpageName =testContextSetup.pageObjectManager.LandingproductpageName();
 }
 
 	@Given("User is on GreenCart Landing page")
