@@ -9,8 +9,8 @@ public class ComplexJsonParse {
 		JsonPath js = new JsonPath(payload.CoursePrice());
 		//Print No Courses returned by API
 		
-		int count =js.getInt("courses.size()");
-				System.out.println(count);
+		int count=	js.getInt("courses.size()"); // since courses is under array - we can use .size() method
+		System.out.println(count);
 				
 		//Print purchase amount
 				
@@ -19,7 +19,7 @@ public class ComplexJsonParse {
 				
 		//Print title of the first course
 				
-		String titileFirstCourse =js.get("courses[2].title");
+	String titileFirstCourse=js.get("courses[0].title");
 		System.out.println(titileFirstCourse);
 		
 		//Print all Course titles and their respective Prices
@@ -36,14 +36,14 @@ public class ComplexJsonParse {
 			String coursesPrices=js.get("courses["+i+"].price").toString();
 			System.out.println(coursesPrices);
 		}
-		
+		System.out.println("Print no of copies sold by RPA Courses");
 		//Print no of copies sold by RPA course
 		for (int i=0;i<count;i++)
 		{
-			String courseTitles=js.get("courses("+i+".title");
+			String courseTitles=js.get("courses["+i+"].title");
 			if(courseTitles.equalsIgnoreCase("RPA"))
 			{
-		int copies = js.get("courses("+i+".copies");	
+		int copies = js.get("courses["+i+"].copies");	
 		System.out.println(copies);
 		break;
 		

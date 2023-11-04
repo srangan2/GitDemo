@@ -46,11 +46,11 @@ public class BrokenLinkSelenium {
 
 	       
 
-	          String url= link.getAttribute("href");
+	          String url11= link.getAttribute("href");
 
 	         
 
-	          HttpURLConnection   conn= (HttpURLConnection)new URL(url).openConnection();
+	          HttpURLConnection   conn2= (HttpURLConnection)new URL(url11).openConnection();
 
 	          conn.setRequestMethod("HEAD");
 
@@ -63,5 +63,7 @@ public class BrokenLinkSelenium {
 	          a.assertTrue(respCode<400, "The link with Text"+link.getText()+" is broken with code" +respCode);
 		
 	}
+
+}
 
 }
