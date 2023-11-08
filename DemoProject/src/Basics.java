@@ -4,6 +4,10 @@ import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import org.testng.Assert;
 
 import Files.payload;
@@ -11,7 +15,7 @@ import Files.payload;
 
 public class Basics {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
 		//Validate add place API is working as expected
@@ -19,10 +23,11 @@ public class Basics {
 		//Given, - All the input details
 		//when, -  Submit API 
 		//then, - Validate the response
+		//Content of the file to String --> content of file can convert into Byte-->Byte data to String
 		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		String response=given().log().all().queryParam("key","qaclick123").header("Content-Type","application/json")
-		.body(payload.AddPlace())
+		.body(new String(Files.readAllBytes(Paths.get("C:\\Users\\hssri\\OneDrive\\Desktop\\Automation Learning\\RestAssured\\AddPlace.json"))))
 		.when().post("maps/api/place/add/json").then().log().all().
 		assertThat()
 		.statusCode(200)
