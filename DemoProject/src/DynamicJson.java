@@ -1,7 +1,7 @@
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import Files.ReusaableMethods;
+
 import Files.ReusableMethods;
 import Files.payload;
 

@@ -66,16 +66,20 @@ public class dataDriven {
 		while(cv.hasNext())
 		{
 		Cell c= cv.next();
-		if(c.getCellTypeEnum()==CellType.STRING)
+		if(c.getCellType()==CellType.STRING)
 		{
 
 		a.add(c.getStringCellValue());
 		}
-		else{
+		else
 
 		a.add(NumberToTextConverter.toText(c.getNumericCellValue()));
-
+		
+		
 		}
+		
+		
+		
 		public static void main(String[] args) {
 			// TODO Auto-generated method stub
 

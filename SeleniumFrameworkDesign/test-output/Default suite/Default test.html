@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 06 07:11:18 IST 2023</td>
+<td>Started on:</td><td>Sun Nov 12 16:41:08 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (804 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (572 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,62 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Page default Sign up", "Application Login"</td>
-<td><div><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at stepDefinitions.MainSteps.user_is_on_practice_landing_page(MainSteps.java:31)
-	at ✽.User is on Practice Landing page(file:///C:/Users/hssri/GitX/SeleniumFrameworkDesign/src/test/java/features/FirstProgram.feature:40)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1744713739", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1744713739'><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at stepDefinitions.MainSteps.user_is_on_practice_landing_page(MainSteps.java:31)
-	at ✽.User is on Practice Landing page(file:///C:/Users/hssri/GitX/SeleniumFrameworkDesign/src/test/java/features/FirstProgram.feature:40)
+<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to application through Selenium locators by getting password", "Locators testing on Rahul Shetty academy"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at stepDefinitions.LocatorValidations.enter_user_name_and_password(LocatorValidations.java:17)
+	at ✽.enter user name and password(file:///C:/Users/hssri/GitX/SeleniumFrameworkDesign/src/test/java/features/Locators.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace404586280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace404586280'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at stepDefinitions.LocatorValidations.enter_user_name_and_password(LocatorValidations.java:17)
+	at ✽.enter user name and password(file:///C:/Users/hssri/GitX/SeleniumFrameworkDesign/src/test/java/features/Locators.feature:9)
 </pre></div></td>
 <td>0</td>
-<td>cucumberOptions.TestNGRunner@4be29ed9</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User page default Login", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>cucumberOptions.TestNGRunner@4be29ed9</td></tr>
-<tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin page default Login", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>cucumberOptions.TestNGRunner@4be29ed9</td></tr>
-<tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mortgage User Page default Login", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>cucumberOptions.TestNGRunner@4be29ed9</td></tr>
-<tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User page default Login", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>cucumberOptions.TestNGRunner@4be29ed9</td></tr>
-<tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User page default Login", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>cucumberOptions.TestNGRunner@4be29ed9</td></tr>
-<tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mortgage User Page default Login", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>cucumberOptions.TestNGRunner@4be29ed9</td></tr>
+<td>cucumberOptions.TestNGRunner@3a7442c7</td></tr>
 </table><p>
 </body>
 </html>
