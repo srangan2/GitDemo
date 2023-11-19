@@ -1,6 +1,6 @@
 package coreJavaTraining;
 
-public class loop1demo {
+public class pb1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
