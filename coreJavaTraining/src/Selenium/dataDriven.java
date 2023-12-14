@@ -67,12 +67,12 @@ public class dataDriven {
 		{
 		Cell c= cv.next();
 		if(c.getCellType()==CellType.STRING)
-		{
+		
 
 		a.add(c.getStringCellValue());
-		}
+		
 		else
-
+		
 		a.add(NumberToTextConverter.toText(c.getNumericCellValue()));
 		
 		
